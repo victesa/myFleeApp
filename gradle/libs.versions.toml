@@ -1,0 +1,95 @@
+[versions]
+agp = "8.5.1"
+coilCompose = "2.5.0"
+coreSplashscreen = "1.0.0-alpha02"
+datastorePreferences = "1.0.0"
+firebaseFirestoreTesting = "24.0.0"
+kotlin = "1.9.0"
+coreKtx = "1.15.0"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+lifecycleRuntimeKtx = "2.8.7"
+activityCompose = "1.9.3"
+composeBom = "2024.04.01"
+mockitoCore = "3.12.4"
+mockitoCoreVersion = "4.5.1"
+mockitoInline = "3.12.4"
+mockitoKotlin = "4.1.0"
+roomRuntime = "2.6.1"
+statusBarVersion = "0.27.0"
+viewModelVersion = "2.6.1"
+ksp = "1.9.0-1.0.13"
+
+#hilt versions
+hilt = "2.48"
+hiltCompiler = "2.48"
+hiltNavigation = "1.2.0"
+daggerHiltAndroidVersion = "2.48"
+
+#firebase versions
+firebaseFirestore = "25.1.1"
+firebaseStorage = "21.0.1"
+firebaseAuth = "23.1.0"
+googleGmsGoogleServices = "4.4.2"
+
+
+
+
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-core-splashscreen = { module = "androidx.core:core-splashscreen", version.ref = "coreSplashscreen" }
+androidx-datastore-preferences = { module = "androidx.datastore:datastore-preferences", version.ref = "datastorePreferences" }
+firebase-firestore-testing = { module = "com.google.firebase:firebase-firestore-testing", version.ref = "firebaseFirestoreTesting" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+androidx-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+androidx-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
+
+#coil dependency
+coil-compose = { module = "io.coil-kt:coil-compose", version.ref = "coilCompose" }
+
+#Status bar dependency
+android-status-bar = {group = "com.google.accompanist", name = "accompanist-systemuicontroller", version.ref = "statusBarVersion"}
+
+#ViewModel dependency
+android-viewModel = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-compose", version.ref = "viewModelVersion"}
+
+# KSP processor Dependencies
+android-hilt = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt"}
+android-hilt-compiler = { group = "com.google.dagger", name = "hilt-android-compiler", version.ref = "hiltCompiler"}
+android-hilt-navigation = { group = "androidx.hilt", name = "hilt-navigation-compose", version.ref = "hiltNavigation"}
+
+# Firebase dependencies
+firebase-firestore = { group = "com.google.firebase", name = "firebase-firestore", version.ref = "firebaseFirestore" }
+firebase-storage = { group = "com.google.firebase", name = "firebase-storage", version.ref = "firebaseStorage" }
+firebase-auth = { group = "com.google.firebase", name = "firebase-auth", version.ref = "firebaseAuth" }
+
+#Room database dependencies
+androidx-room-compiler = { module = "androidx.room:room-compiler", version.ref = "roomRuntime" }
+androidx-room-ktx = { module = "androidx.room:room-ktx", version.ref = "roomRuntime" }
+androidx-room-runtime = { module = "androidx.room:room-runtime", version.ref = "roomRuntime" }
+
+#Mockito test dependencies
+mockito-core = { module = "org.mockito:mockito-core", version.ref = "mockitoCore" }
+mockito-core-v451 = { module = "org.mockito:mockito-core", version.ref = "mockitoCoreVersion" }
+mockito-inline = { module = "org.mockito:mockito-inline", version.ref = "mockitoInline" }
+mockito-kotlin = { module = "org.mockito.kotlin:mockito-kotlin", version.ref = "mockitoKotlin" }
+
+[plugins]
+ksp = {id = "com.google.devtools.ksp", version.ref = "ksp"}
+android-application = { id = "com.android.application", version.ref = "agp" }
+jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+google-gms-google-services = { id = "com.google.gms.google-services", version.ref = "googleGmsGoogleServices" }
+daggerHilt = {id = "com.google.dagger.hilt.android", version.ref = "daggerHiltAndroidVersion"}
+

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "316255898935",
+    "project_id": "myfleeapp",
+    "storage_bucket": "myfleeapp.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:316255898935:android:9db3f4f0157ee36aad9eb2",
+        "android_client_info": {
+          "package_name": "com.victorkirui.myfleeapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgMd10Hg4TPRkKTeUU76hAhKrRjYvKLyA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
